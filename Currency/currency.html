@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<script src="currency.js"></script>
+	</head>
+<body>
+<style>
+body {
+  background:-webkit-linear-gradient(left, #3f87a6, #ebf8e1, #f69d3c);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-family:'Alegreya';
+  text-transform:small-caps;
+}
+button{
+	display:block;
+	margin:0 auto;
+	width:200px;
+	height:30px;
+	border-radius:30px;
+	color:#fff;
+	font-size:15px;
+	cursor:pointer;
+}
+.submit{
+	margin-top:15px;
+	margin-bottom:10px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family:'Alegreya';
+	background:-webkit-linear-gradient(left, #3f87a6,#f69d3c);
+	text-align:center;
+	
+	}
+h1{
+	width:100%;
+	font-size:35px;
+	text-align:center;
+	text-transform:small-caps;
+	font-family: 'roboto';
+	}
+	p{
+	color:Black;
+	text-align:center;
+	font-size:15px;
+	font-family: 'Alegreya';
+	font-style:bold;
+	}
+	span{
+	width:100%;
+	font-size:35px;
+	text-align:center;
+	text-transform:small-caps;
+	font-family: 'Alegreya';
+	}
+
+	select.lt{
+    float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	float:center
+	transform: translate(-50%, -50%);
+}
+	
+</style>
+		
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<center>
+
+		</div>
+	</nav>
+	
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+	<b><h1 class="text-primary"><center><span style="color:#3f87a6,#f69d3c" >CURRENCY CONVERTOR</span></center></h1></b>
+		<hr style="border-top:5px dotted #ccc;">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<center>
+			<div class="form-group">
+        <br/>
+        <center><p><b>From</b> </p>&nbsp 
+				<select class="form-control" id="converter" style="text-align:center;width:20%;color:green;font-weight:bold;font-family:Alegreya">
+					<option class="lt">Choose An Option</option>
+					<option class="lt" value="usd">USD</option>
+					<option class="lt" value="Dollar">DOLLAR</option>
+					<option class="lt" value="Pound">POUND</option>
+					<option class="lt" value="Euro">EURO</option>
+					<option class="lt" value="INR">INR Indian Rupee</option>
+				</select>
+		</center>
+				<br/>
+        <label for="lname"><center><b><p style="color: Orange;">AMOUNT:</P></b></center></label><br>
+				<center><input type="number" style="width:20%;font-weight:bold;font-family:Alegreya" class="form-control" id="value1"/></center>
+			</div>
+			<br/>
+			 <center>
+				<p><b>To</b></p> &nbsp <select  class="form-control" id="converter1" style="width:20%;color:green;font-weight:bold;font-family:Alegreya">
+					<option class="lt">Choose An Option</option>
+					<option class="lt" value="usd">USD</option>
+					<option class="lt" value="Dollar">DOLLAR</option>
+					<option class="lt" value="Pound">POUND</option>
+					<option class="lt" value="Euro">EURO</option>
+					<option class="lt" value="INR">INR Indian Rupee</option>
+				</select>
+		</center>
+			<div class="form-group">
+      <label for="lname"><center><p style="color:Orange;"><b>RUPEE VALUE:</b><p/></center></label><br>
+
+     	<center><input type="number" style="width:20%;font-weight:bold;font-family:Alegreya" class="form-control" id="value2" disabled="disabled"/></center>
+			</div>
+		</div></center>
+	</div>
+	</br>
+		<center><button class="submit" type="button" onclick="Currency();Calculate()">CONVERT</button></center>
+		
+</body>
+</html>
